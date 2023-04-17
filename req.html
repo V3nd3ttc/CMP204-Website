@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Requirements page</title>
+	<link rel="stylesheet" href="./css/reqStyle.css">
+</head>
+<body>
+
+<h1>CMP204 Requirements Page - Unit 2 Assessment</h1>
+
+<p>If you have not met a requirement, do not delete it from the table.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th class="reqCol">Requirement</th>
+      <th class="metCol">How did you meet this requirement?</th>
+      <th class="fileCol">File name(s), line no.</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>HTML, CSS, JavaScript has been contained within separate files.</td>
+      <td>All of the above listed files have been put in a separe folder</td>
+      <td>Folder containing all of the javascript files - js.
+          Folder containing all of the css files - css.
+          Folder containing all of the html/php files - main folder.
+          Folder containing all of the images - images.
+      </td>
+    </tr>
+
+    <tr>
+      <td>A clear use of HTML5.</td>
+      <td>Every page is written in HTML5</td>
+      <td>index.php, login.php, signup.php, account.php, cookies.php</td>
+    </tr>
+    <tr>
+      <td>Use of the Bootstrap framework providing a responsive layout.</td>
+      <td>Used boostrap framework for image carousel in home paxe gallery, tables in cookies page, jumbotrons, grid system as well as for making everything look more appealing</td>
+      <td>used in all files</td>
+    </tr>
+    <tr>
+      <td>Use of JavaScript to manipulate the DOM based on an event.</td>
+      <td>1 - Used Javascript to manipulate the src of an image file in order to change between profile pictures in the account page.
+          2 - Used Javascript to manipulate the innerhtml of a 'p' elemement in order to display names of songs in a youtube playlist.
+      </td>
+      <td>
+          1 - /js/scripts.js (lines 16-26)
+          2 - /js/scriptsAjax (line - 13)
+      </td>
+    </tr>
+    <tr>
+      <td>Use of jQuery in conjunction with the DOM.</td>
+      <td>1 - Used Jquery to append a 'p' elements inside a div in order to display a help section, 
+        2 - Used Jquery to append blockquote element inside a div to display quotes about the band, 
+        3 - Used Jquery to change the css properties of elements when they are hovered. 
+        On hover their background would become less transparent and their border colour would change.
+      </td>
+      <td>
+        1 - /js/scriptsjQuery.js (lines 27-36), 
+        2 - /js/scriptsjQuery.js (lines 22), 
+        3 - /js/scriptsjQuery.js (lines 2-13)
+      </td>
+    </tr>
+    <tr>
+      <td>Use of AJAX (pure JavaScript i.e. without the use of a library).</td>
+      <td>Used pure javascript ajax to get the contents of a .txt file containing names of songs in a youtube playlist</td>
+      <td>/js/scriptsAjax (lines 8-20)</td>
+    </tr>
+    <tr>
+      <td>Use of the jQuery AJAX function.</td>
+      <td>Used jQuery AJAX to send a POST message and receive html code that would get displayed on the home page.
+         The message being sent contains a variable of how many times it has been sent that lets the php file know which quote to return.</td>
+      <td>/js/scriptsjQuery.js (lines 14-26) </td>
+    </tr>
+    <tr>
+      <td>User login functionality (PHP/MySQL).</td>
+      <td>1 - The user can create an account by going into the sign up page where they have to enter a username, password and valid email.
+        Client-side as well as server-side checks get performed if the user is trying to send invalid data such as a blank field, 
+        invalid email address, or password that is less then 5 characters. There is also a check whether the username is already taken, 
+        2 - The user can log into their account by going into the login page where where they have to enter a valid username or password. 
+        And again similar as in during sign up, checks are performed both on client as well as server-side.
+      </td>
+      <td> 1 - signup.php,
+        2 - login.php.
+      </td>
+    </tr>
+    <tr>
+      <td>Ability to select (SELECT), add (INSERT), edit (UPDATE) and delete (DELETE) information from a database (PHP/MySQL).</td>
+      <td>1 - Users can change(UPDATE) their username and password which uses (SELECT), 
+        2 - Users can delete(DELETE) their account,
+        3 - Data gets selected (SELECT) during login and sign up (to check if username is taken). Data gets inserted (INSERT) during sign up.
+      </td>
+      <td>
+        1 - account.php (lines 11-82)
+        2 - account.php (lines 83-112)
+        3 - login.php (line 20), signup.php(line 23-37)
+      </td>
+    </tr>
+    <tr>
+      <td>Consideration of GDPR and the Cookie Law.</td>
+      <td>An alert gets displayed when the the page is entered for the first time. In the alert they are made aware of the use of cookies
+        are told where they can find the page containing the privacy policy.</td>
+      <td>
+        /js/scripts.js (lines 2-4 and 11-14)
+      </td>
+    </tr>
+    <tr>
+      <td>SQL queries written as prepared statements.</td>
+      <td>All of the sql queries are written in object oriented style prepared statements by using mysqli-prepare, mysqli-bind_param and mysqli-execute.</td>
+      <td>login.php (lines 20-32), signup.php (lines 23-49), account.php (lines 23-42, 55-81, 89-107)</td>
+    </tr>
+    <tr>
+      <td>Passwords should be salted and hashed.</td>
+      <td>All of the password and salted and hashed using php 'password_hash' function. 
+        To compare password during login or account changes to password in database I used 'password_verify' php function.</td>
+      <td>login.php (line 25), signup.php (line 36), account.php (line 28, 60, 94) </td>
+    </tr>
+    <tr>
+      <td>User input is sanitised.</td>
+      <td>All of the user input is sanized using the php functions 'trim', 'stripslashes' and 'htmlspecialchars'
+         in a function called sanitizeInput inside functions.php which gets called on every _POST variable.</td>
+      <td>functions.php (lines 20-25), login.php (lines 11-12) , signup.php (lines 11-13), account.php (lines 13-15, 46-47, 85)</td>
+    </tr>
+  </tbody>
+</table>
+		
+</body>
+</html>
+
+
+

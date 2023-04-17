@@ -1,0 +1,153 @@
+@font-face {
+  font-family: oswald;
+  src: url("../font/Oswald-VariableFont_wght.ttf");
+}
+
+* {
+  font-family: oswald;
+}
+
+.navbar {
+    background-color: #413C8C;
+}
+
+.nav.navbar-nav li a {
+    color: white; 
+}
+
+.navbar a.navbar-brand {
+    /* color: white; */
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    display: block;
+    max-width:100px;
+    margin-top: -30px;
+}
+
+/* .navbar-brand {
+    
+} */
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #8F3CAB !important;
+}
+
+body {
+    padding-top: 50px;
+    /* Pattern created using: https://doodad.dev/pattern-generator/ */
+    background-image: url("../images/pattern.png");
+    color: white; 
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #8F3CAB;
+}
+.jumbotron  {
+    background-color: #413c8c42;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+}
+.container-fluid .jumbotron {
+    background-color: #413c8c42;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border: 4px solid #413C8C;
+    margin-bottom: 15px;
+}
+
+.blockquote {
+    border-left: 4px dashed #413C8C;
+    background-color: #413c8c42;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.blockquote-footer {
+    color: #b1b1b1;
+}
+
+.songs {
+    margin-top: 10px;
+    background-color: #413c8c42;
+}
+
+.row{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 55px;
+}
+
+.col-sm-4.accountSettings {
+    background-color: #413c8c42;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border: 4px solid #413C8C;
+    margin-bottom: 15px;
+}
+.col-sm-4 > p {
+    font-size: 20px;
+}
+
+.btn-default {
+    background-color: #8F3CAB;
+    color: white;
+}
+
+.accountSettings {
+    background-color: #413c8c42;
+    height: 290px;
+    border: 4px solid #413C8C;
+}
+
+/* div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.form-control {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    background-color: #8F3CAB;
+    color: white;
+}
+
+label {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.accountDatabase {
+    margin-top: 20px;
+    background-color: #413c8c42;
+    height: 325px;
+    border: 4px solid #413C8C;
+
+}
+
+.table-responsive {
+    font-size: 16px;
+}
+
+.table>tbody>tr>td {
+    border: 1px solid #8F3CAB;;
+}
+.table>thead>tr>th {
+    border-bottom: 2px solid #8F3CAB;
+}
