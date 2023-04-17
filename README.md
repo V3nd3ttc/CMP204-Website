@@ -1,2 +1,2 @@
 # CMP204-Website
-CMP204-Dynamic Web Development Assignment
+CMP204-Dynamic Web Development 1 Assignment
